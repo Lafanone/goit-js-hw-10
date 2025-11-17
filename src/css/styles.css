@@ -18,18 +18,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 24px;
   color: #2E2F42;
-  /* Прибираємо зайві flex властивості з body, якщо вони там були */
   display: block;
 }
 
-/* Новий контейнер для верхньої частини */
 .timer-controls {
   display: flex;
   align-items: center;
   gap: 8px;
-  /* Відступ між полем і кнопкою */
   margin-bottom: 32px;
-  /* Відступ до цифр */
 }
 
 #datetime-picker {
@@ -74,7 +70,6 @@ button[data-start]:disabled {
 .timer {
   display: flex;
   gap: 24px;
-  /* Відступи між цифрами */
 }
 
 .field {
@@ -93,4 +88,105 @@ button[data-start]:disabled {
   font-size: 16px;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 360px;
+  margin: 40px auto;
+}
+
+.form label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: #2E2F42;
+}
+
+.form input[type="number"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form input[type="number"]:hover,
+.form input[type="number"]:focus {
+  border-color: #000;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+legend {
+    font-size: 12px;
+    padding: 0 4px;
+    color: #2E2F42;
+    margin-left: 12px;
+    float: none;
+    width: auto;
+}
+
+
+fieldset label {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  accent-color: #4E75FF;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4E75FF;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #6C8CFF;
 }
