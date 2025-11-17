@@ -13,3 +13,84 @@
 @import url('./header.css');
 @import url('./badges.css');
 @import url('./back-link.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 24px;
+  color: #2E2F42;
+  /* Прибираємо зайві flex властивості з body, якщо вони там були */
+  display: block;
+}
+
+/* Новий контейнер для верхньої частини */
+.timer-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Відступ між полем і кнопкою */
+  margin-bottom: 32px;
+  /* Відступ до цифр */
+}
+
+#datetime-picker {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 232px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+#datetime-picker:hover,
+#datetime-picker:focus {
+  border-color: #000;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4E75FF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: inherit;
+}
+
+button[data-start]:hover {
+  background-color: #6C8CFF;
+}
+
+button[data-start]:disabled {
+  background-color: #CFCFCF;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  /* Відступи між цифрами */
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
