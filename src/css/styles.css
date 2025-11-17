@@ -125,36 +125,46 @@ button[data-start]:disabled {
   transition: border-color 0.3s;
 }
 
-.form input[type="number"]:hover,
-.form input[type="number"]:focus {
+/* Стани інпуту */
+.form input[type="number"]:hover {
   border-color: #000;
 }
 
+.form input[type="number"]:focus {
+  border-color: #4E75FF;
+  /* Синій колір для фокусу згідно макету */
+}
+
+/* Блок Fieldset (State) */
 fieldset {
-    margin: 0;
-    padding: 0;
-    border: 1px solid #808080;
-    border-radius: 4px;
-    width: 100%;
-    height: 64px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    text-align: left;
-    padding-top: 8px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: left;
+  padding-top: 8px;
+  transition: border-color 0.3s;
+}
+
+fieldset:hover {
+  border-color: #000;
 }
 
 legend {
-    font-size: 12px;
-      color: #2E2F42;
-      padding: 0 4px;
-       margin-left: 16px;
-      float: none;
-      width: auto;
+  font-size: 12px;
+  color: #2E2F42;
+  padding: 0 4px;
+  margin-left: 16px;
+  float: none;
+  width: auto;
 }
-
 
 fieldset label {
   display: flex;
