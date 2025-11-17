@@ -141,17 +141,18 @@ fieldset {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding-top: 10px;
+    gap: 24px;
+    text-align: left;
+    padding-top: 8px;
 }
 
 legend {
     font-size: 12px;
-    padding: 0 4px;
-    color: #2E2F42;
-    margin-left: 12px;
-    float: none;
-    width: auto;
+      color: #2E2F42;
+      padding: 0 4px;
+       margin-left: 16px;
+      float: none;
+      width: auto;
 }
 
 
