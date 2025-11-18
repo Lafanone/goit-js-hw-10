@@ -49,7 +49,7 @@ startBtn.addEventListener("click", () => {
         if (timeDiff <= 0) {
             clearInterval(timerInterval)
             updateTimerInterface(0, 0, 0, 0)
-            dataTimePicker.disabled = false 
+            dateTimePicker.disabled = false 
             return
         }
         const { days, hours, minutes, seconds } = convertMs(timeDiff)
